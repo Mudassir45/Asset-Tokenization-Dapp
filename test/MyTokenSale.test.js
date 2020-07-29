@@ -35,4 +35,5 @@ contract("Token Sale Test", async (accounts) => {
         balanceBefore = balanceBefore.add(new BN(1));
         return expect(tokenInstance.balanceOf(deployerAccount)).to.eventually.be.a.bignumber.equal(balanceBefore);
     });
+    
 });
